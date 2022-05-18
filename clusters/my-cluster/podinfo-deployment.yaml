@@ -1,0 +1,29 @@
+apiVersion: apps/v1 
+kind: Deployment
+metadata:
+  name: podinfo
+  namespace: test
+spec:
+  selector:
+    matchLabels:
+      app: podinfo
+  template:
+    metadata:
+      labels:
+        app: podinfo
+    spec:
+      containers:
+      - name: podinfo
+        image:  amadouth/swh-counters
+        resources:
+      requests:
+        memory: "512Mi"
+        cpu: "512m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+        #imagePullPolicy: IfNotPresent
+        ports:
+        - name:  http
+          containerPort: 9898
+          protocol: TCP
