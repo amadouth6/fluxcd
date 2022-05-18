@@ -23,4 +23,5 @@ spec:
   update:
     path: ./clusters/my-cluster
     strategy: Setters
+#
 
