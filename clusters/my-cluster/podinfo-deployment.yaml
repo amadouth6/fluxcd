@@ -23,3 +23,9 @@ spec:
         - name:  http
           containerPort: 9898
           protocol: TCP
+  spec:
+  containers:
+  - name: podinfod
+  image: amadouth/swh-counter1:1.0.0 # {"$imagepolicy": "flux-system:podinfo"} 
+
+
