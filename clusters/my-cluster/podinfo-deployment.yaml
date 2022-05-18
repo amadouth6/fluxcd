@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image:  ghcr.io/stefanprodan/podinfo:5.0.0
+        image:  amadouth/swh-counter1:1.0.0
         imagePullPolicy: IfNotPresent
         ports:
         - name:  http
