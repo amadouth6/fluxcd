@@ -5,6 +5,5 @@ metadata:
   name: podinfo
   namespace: flux-system
 spec:
-  image: ghcr.io/stefanprodan/podinfo
+  image: amadouth/swh-counter1
   interval: 1m0s
-
